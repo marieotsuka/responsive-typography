@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "Pentameter VF";
+  src: url(fonts/Pentameter-VF.woff2);
+}
+@font-face {
+  font-family: "Prensa";
+  src: url(fonts/Prensa-Book.woff2);
+}
+@font-face {
+  font-family: "Prensa";
+  font-style: italic;
+  src: url(fonts/Prensa-BookItalic.woff2);
+}
+body {
+  font-size: 18px;
+  font-family: "Prensa";
+}
+
+.pentameter, .remark-slide-content figcaption, .remark-slide-content h5, .remark-slide-content h4 {
+  font-family: "Pentameter-VF";
+  font-variation-settings: "wdth" var(--wdth), "wght" var(--wght), "slnt" var(--slnt);
+}
+
+.remark-slide-number {
+  display: none;
+}
+
+.remark-slide-content {
+  padding: 1em 2em;
+  background-color: white;
+  background-size: cover;
+  color: black;
+}
+.remark-slide-content h1, .remark-slide-content h2, .remark-slide-content h3, .remark-slide-content h4, .remark-slide-content h5 {
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+.remark-slide-content em {
+  font-style: italic;
+}
+.remark-slide-content .center h1, .remark-slide-content .center h2 {
+  width: 80%;
+  margin: auto;
+}
+.remark-slide-content h1, .remark-slide-content h2 {
+  margin-top: 2rem;
+}
+.remark-slide-content h1 {
+  font-size: 5rem;
+  line-height: 0.9;
+}
+.remark-slide-content h2 {
+  font-size: 3rem;
+  line-height: 1;
+}
+.remark-slide-content h3 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+.remark-slide-content h4 {
+  font-size: 1.5rem;
+  --wdth: 100;
+  --wght: 400;
+  --slnt: 0;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+}
+.remark-slide-content h5 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  --wdth: 100;
+  --wght: 400;
+  --slnt: 8;
+}
+.remark-slide-content p, .remark-slide-content li {
+  font-size: 2rem;
+  margin: 0;
+}
+.remark-slide-content figcaption {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  --wdth: 110;
+  --wght: 500;
+  --slnt: 0;
+}
+.remark-slide-content.quote h3 {
+  width: 85%;
+}
+.remark-slide-content.mix li {
+  background: transparent;
+}
+.remark-slide-content a {
+  color: blue;
+  text-decoration: none;
+  border-bottom: 1px solid blue;
+}
+.remark-slide-content a:hover {
+  text-decoration: none;
+}
+.remark-slide-content.quote h3 {
+  text-indent: -0.5em;
+}
+
+.mix {
+  background-color: blue;
+  background-blend-mode: screen;
+}
+
+.caption {
+  text-align: right;
+  margin-top: 1rem;
+  display: block;
+  font-size: 0.7em;
+}
+
+ul {
+  padding-left: 0;
+  display: flex;
+}
+
+li {
+  flex: 1;
+  list-style-type: none;
+}
+
+li:first-child {
+  margin-right: 2rem;
+}
+
+.section {
+  background: blue;
+  color: white;
+}
+
+.ra {
+  background: black;
+  color: white;
+}
+
+img, video {
+  margin: auto;
+  display: block;
+  max-height: 600px;
+  max-width: 100%;
+}
+
+ul.cols {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-right: 1rem;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+#the-team + .cols li {
+  flex: none;
+  width: 25%;
+}
+
+.rangebox {
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  margin: 0 25px;
+  border-top: 5px solid blue;
+}
+
+.line::after {
+  content: ">";
+  font-size: 50px;
+  color: blue;
+  font-weight: bold;
+  position: absolute;
+  right: -12px;
+  top: -35px;
+}
+
+.wave {
+  width: 60%;
+  margin-top: 2em;
+}
+
+.path {
+  fill: none;
+  stroke: black;
+  stroke-width: 2px;
+  stroke-miterlimit: 10;
+}
+
+.sm {
+  font-size: 1.4rem;
+  display: inline-block;
+  padding-left: 0.5em;
+}
+
+#cloud {
+  font-family: "Hiragino Mincho ProN";
+  font-size: 40vw;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  line-height: 0.1;
+}
+
+/*# sourceMappingURL=styles.css.map */
