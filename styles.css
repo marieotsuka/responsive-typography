@@ -12,12 +12,12 @@
   src: url(fonts/Prensa-BookItalic.woff2);
 }
 body {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Prensa";
 }
 
 .pentameter, .remark-slide-content figcaption, .remark-slide-content h5, .remark-slide-content h4 {
-  font-family: "Pentameter-VF";
+  font-family: "Pentameter VF";
   font-variation-settings: "wdth" var(--wdth), "wght" var(--wght), "slnt" var(--slnt);
 }
 
@@ -69,7 +69,7 @@ body {
 }
 .remark-slide-content h5 {
   margin-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   --wdth: 100;
   --wght: 400;
   --slnt: 8;
@@ -79,7 +79,7 @@ body {
   margin: 0;
 }
 .remark-slide-content figcaption {
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   margin-top: 1rem;
   --wdth: 110;
@@ -133,6 +133,22 @@ li:first-child {
 .section {
   background: blue;
   color: white;
+}
+
+.live {
+  animation: pulse 1s ease-in-out alternate infinite;
+}
+
+@keyframes pulse {
+  from {
+    text-shadow: none;
+  }
+  to {
+    text-shadow: 5px 5px 10px white;
+  }
+}
+.grey {
+  background: gainsboro;
 }
 
 .ra {

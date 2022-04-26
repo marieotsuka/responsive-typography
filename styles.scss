@@ -12,11 +12,11 @@
   src: url(fonts/Prensa-BookItalic.woff2);
 }
 body {
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Prensa';
 }
 .pentameter{
-  font-family: 'Pentameter-VF';
+  font-family: 'Pentameter VF';
   font-variation-settings: "wdth" var(--wdth), "wght" var(--wght), "slnt" var(--slnt);
 }
 .remark-slide-number {
@@ -72,7 +72,7 @@ body {
   }
   h5{
     margin-top: 1rem;
-    font-size: 1.2rem;   
+    font-size: 1.5rem;   
     @extend .pentameter;
 
     --wdth: 100;
@@ -85,7 +85,7 @@ body {
     margin: 0;
   }
   figcaption{
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     @extend .pentameter;
     margin-top: 1rem;
@@ -150,7 +150,20 @@ li:first-child{
   background: blue;
   color: white; 
 }
-
+.live{
+  animation: pulse 1s ease-in-out alternate infinite;
+}
+@keyframes pulse{
+  from {
+    text-shadow: none;
+  }
+  to{
+    text-shadow: 5px 5px 10px white;
+  }
+}
+.grey{
+  background: rgb(220,220,220);
+}
 .ra{
   background: black;
   color: white;
