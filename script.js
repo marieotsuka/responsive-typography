@@ -2,8 +2,5 @@ var slideshow = remark.create({
   ratio: "16:9"
 });
 
-var linkList = document.getElementsByTagName('a');
-
-for(var i in linkList){
- linkList[i].setAttribute('target', '_blank');
-}
+const linkList = document.getElementsByTagName('a');
+linkList.forEach( link => link.setAttribute('target', '_blank') );
