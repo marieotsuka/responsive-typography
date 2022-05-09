@@ -1,2 +1,3 @@
-# Guest Lecture for SVA Design Thinking
-9:00AM 4/26/2022
+# Interfaces & Typefaces
+Function as a medium
+11:00AM 5/29/2022
